@@ -1,0 +1,29 @@
+{% extends "header.html" %}
+
+{%block main%}
+<div class="container mb-3">
+    <form action="." method="post" enctype="multipart/form-data" class="w-50 border mt-5 p-3">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="" class="form-label mt-3">Event Name</label>
+            <br>
+            {{form.event_name}}
+            <br>
+            <label for="" class="form-label mt-3">Description</label>
+            <br>
+            {{form.description}}
+            <br>
+            <label for="" class="form-label mt-3">Start Date</label>
+            <br>
+            {{form.start_date}}
+            <br>
+            <label for="" class="form-label mt-3">Location</label>
+            <br>
+            {{form.location}}
+            <br>
+            
+            <button class="btn btn-primary mt-3" type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+{% endblock %}

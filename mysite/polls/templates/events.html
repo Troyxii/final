@@ -1,0 +1,22 @@
+{% extends "header.html" %}
+
+{%block main%}
+<div class="mt-4 p-5 d-flex gap-2 flex-wrap justify-content-center">
+
+  {% for evr in events %}
+<div class="card mb-3">
+    <div class="card-body">
+      <p class="card-title"> Event Name: {{evr.event_name}}</p>
+      <p class="card-title"> Description: {{evr.description}}</p>
+      <p class="card-title"> Start Date: {{evr.start_date}}</p>
+      <p class="card-title"> Location: {{evr.location}}</p>
+    </div>
+    <a href="{% url 'updateeve' evr.id %}" class="btn btn-primary">Edit</a>
+    <a href="{% url 'deleteve' evr.id %}" class="btn btn-danger">Delete</a>
+    
+
+  </div>
+  {% endfor %}
+ 
+</div>
+{% endblock %}
