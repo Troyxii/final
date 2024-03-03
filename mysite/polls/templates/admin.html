@@ -5,7 +5,7 @@
     <form action="." method="post" enctype="multipart/form-data" class="w-50 border mt-5 p-3">
         {% csrf_token %}
         <div class="mb-3">
-            <label for="" class="form-label mt-3">Event Name</label>
+            <label for="" class="form-label mt-3">Program Name</label>
             <br>
             {{fo.event_name}}
             <br>
@@ -13,11 +13,11 @@
             <br>
             {{fo.description}}
             <br>
-            <label for="" class="form-label mt-3">Start Date</label>
+            <label for="" class="form-label mt-3">Start Time</label>
             <br>
             {{fo.start_date}}
             <br>
-            <label for="" class="form-label mt-3">Location</label>
+            <label for="" class="form-label mt-3">Coach</label>
             <br>
             {{fo.location}}
             <br>

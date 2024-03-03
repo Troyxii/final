@@ -8,8 +8,8 @@
     <div class="card-body">
       <p class="card-title"> Event Name: {{evr.event_name}}</p>
       <p class="card-title"> Description: {{evr.description}}</p>
-      <p class="card-title"> Start Date: {{evr.start_date}}</p>
-      <p class="card-title"> Location: {{evr.location}}</p>
+      <p class="card-title"> Start Time: {{evr.start_date}}</p>
+      <p class="card-title"> Coach: {{evr.location}}</p>
     </div>
     <a href="{% url 'updateeve' evr.id %}" class="btn btn-primary">Edit</a>
     <a href="{% url 'deleteve' evr.id %}" class="btn btn-danger">Delete</a>
